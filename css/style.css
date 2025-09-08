@@ -1,0 +1,193 @@
+.libertinus-keyboard-regular {
+    font-family: "Libertinus Keyboard", system-ui;
+    src: url("../fonts/LibertinusKeyboard-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #497098;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+nav a {
+    color: #fff;
+    text-decoration: underline;
+}
+header {
+    background-color: #80aad3;
+    padding: 10px;
+}
+header h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #fff;
+    letter-spacing: -2px;
+}
+header img {
+    border: 5px solid #497098;
+    border-radius: 50%;
+    margin: 10px;
+}
+.card img {
+    border: 5px solid #497098;
+    border-radius: 10%;
+    margin: 10px;
+}
+.address {
+    font-size: 1em;
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+}
+.tagline {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+h2 {
+    padding: 15px;
+    letter-spacing: -2px;
+    color:#497098;
+    font-family: "Libertinus Keyboard", system-ui;
+}
+.colored {
+    color: #497098;
+}
+dl {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 5px 10px;
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+}
+dt {
+    grid-column: 1;
+}
+dd {
+    grid-column: 2;
+}
+#skills ul {
+    margin-left: 20px;
+}
+#experience a {
+    color:#497098;
+    text-decoration: none;
+    font-weight: bold;
+}
+#experience a:hover {
+    color: #80aad3;
+    text-decoration: underline;
+}
+ul {
+    list-style-type: square;
+    padding-left: 24px;
+    font-family: "Roboto", sans-serif;
+}
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card {
+    box-shadow: 4px 4px 4px #497098;
+    background-color: #e6f1fd;
+    padding: 15px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.card:hover {
+    box-shadow: 8px 8px 8px #497098;
+}
+footer {
+    display: flex;
+    color:#497098;
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
+    justify-content: center;
+}
+footer a {
+    color:#497098;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+}
+footer a:hover {
+    color: #497098;
+    text-decoration: underline;
+    justify-content: center;
+}
+
+/* contact */
+#contact-form {
+    display: flex;
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+}
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+#contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#contact-form input, #contact-form textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* mobile */
+@media (max-width: 680px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    
+    .three-col {
+      grid-template-columns: 1fr;  
+      gap: 15px;
+      justify-items: center;       
+    }
+
+    .card {
+        width: 90%;                 
+        max-width: 420px; 
+        text-align: center;          
+    }
+}
