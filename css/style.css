@@ -166,6 +166,9 @@ footer a:hover {
 .bold {
     font-weight: bold;
 }
+.padding {
+    padding: 8px;
+}
 .one-col {
     display: grid;
     grid-template-columns: 1fr;
