@@ -50,6 +50,10 @@ header img {
     border: 5px solid #497098;
     border-radius: 50%;
     margin: 10px;
+    text-align: center;
+}
+.align-center {
+    text-align: center;
 }
 .card img {
     border: 5px solid #497098;
